@@ -20,7 +20,7 @@ yolo.make_model()
 yolo.load_weights(
     "D:/data/git/darknet/rodentDetection/yolov4-obj_last.weights", weights_type="yolo")
 
-model_name = '20210123-134230'
+model_name = ''# user defines, like '20210123-134230'
 saved_model_path = "D:/data/git/mouseTouch/ocr/saved_models/{}".format(model_name)
 ocrmodel = tf.keras.models.load_model(saved_model_path) 
 
