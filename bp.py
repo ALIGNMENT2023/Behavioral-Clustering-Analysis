@@ -196,7 +196,7 @@ def batchBatchAnalysis(analysisMode):
     from tkinter import filedialog
 #    defaultFolder = '/media/yangx/YXHD-01/data_shared/mouseTouchData4Analysis/'
 #    defaultFolder = 'C:\\Users\\Admin\\Documents\\mouseTouchData'
-    defaultFolder = 'D:/Data/mouseTouchData4Analysis'
+    defaultFolder = '' # user defines, like 'D:/Data/mouseTouchData4Analysis'
     currentpath = os.getcwd()
     os.chdir(defaultFolder)
     root = tk.Tk()
@@ -243,7 +243,7 @@ def batchAnalysisPKU(analysisMode, folderPath=None, parallel=False):
 
     fcnBegin = time.time()
 #    defaultFolder = '/media/yangx/YXHD-01/data_shared/mouseTouchData4Analysis/'
-    defaultFolder = 'D:/data/mouseTouchData4Analysis/data4stat/'
+    defaultFolder = '' # user defines, like 'D:/data/mouseTouchData4Analysis/data4stat/'
     currentpath = os.getcwd()
     os.chdir(defaultFolder)
     if folderPath is None:
