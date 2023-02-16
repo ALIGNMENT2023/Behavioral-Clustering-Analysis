@@ -25,7 +25,7 @@ with open('D:/data/git/ActionLabeling/class_list_test.txt') as f:
 class_num = len(CLASS_LIST)   
    
 model = tf.keras.applications.ResNet50(weights=None,input_shape=(576,1024,3),classes=class_num)
-time_pre_train = '20210703-191449'#'20210502-223408'#'20210409-103305'
+time_pre_train = '' # user define, like'20210703-191449'#'20210502-223408'#'20210409-103305'
 best_pre_train = 121#350#120
 checkpoint_path = "D:/data/git/ActionLabeling/checkpoints/{time:s}/cp-{epoch:03d}.ckpt"
 model.load_weights(checkpoint_path.format(time=time_pre_train, epoch=best_pre_train))
